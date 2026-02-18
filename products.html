@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Sweet Delights</title>
+
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #fff8f2;
+            color: #333;
+        }
+
+        /* Header */
+        .header {
+            background: #ffb6c1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+        }
+
+        .header h1 {
+            color: white;
+            font-size: 28px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin-left: 25px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #5a2a2a;
+        }
+
+        /* Content Section (same card style like About page) */
+        .content {
+            max-width: 900px;
+            margin: 80px auto;
+            padding: 40px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .content h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            color: #ff6f91;
+        }
+
+        .product-box {
+            margin: 15px 0;
+            padding: 15px;
+            background: #fff8f2;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: 500;
+            color: #ff6f91;
+            transition: 0.3s;
+        }
+
+        .product-box:hover {
+            background: #ff6f91;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            background: #ffb6c1;
+            text-align: center;
+            padding: 20px;
+            color: white;
+            font-size: 14px;
+            margin-top: 60px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            nav {
+                margin-top: 10px;
+            }
+
+            .content {
+                margin: 40px 20px;
+                padding: 25px;
+            }
+
+            .content h2 {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="header">
+    <h1>Sweet Delights</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section class="content">
+    <h2>Our Products</h2>
+
+    <div class="product-box">Chocolate Cake – RM45</div>
+    <div class="product-box">Vanilla Cake – RM40</div>
+    <div class="product-box">Cupcakes – RM20</div>
+</section>
+
+<footer>
+    <p>Freshly baked every day</p>
+</footer>
+
+</body>
+</html>
