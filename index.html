@@ -4,178 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sweet Delights Bakery</title>
-
-    <style>
-        /* Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        body {
-            background-color: #fff8f2;
-            color: #333;
-        }
-
-        /* Header */
-        .header {
-            background: #ffb6c1;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 60px;
-        }
-
-        .header h1 {
-            color: white;
-            font-size: 28px;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: white;
-            margin-left: 25px;
-            font-weight: 500;
-            transition: 0.3s;
-        }
-
-        nav a:hover {
-            color: #5a2a2a;
-        }
-
-        /* Banner */
-        .banner {
-            background: linear-gradient(rgba(255,182,193,0.7), rgba(255,182,193,0.7)),
-                        url("images/cake1.jpg") center/cover no-repeat;
-            text-align: center;
-            padding: 120px 20px;
-            color: white;
-        }
-
-        .banner h2 {
-            font-size: 42px;
-            margin-bottom: 15px;
-        }
-
-        .banner p {
-            font-size: 18px;
-            margin-bottom: 20px;
-        }
-
-        .banner button {
-            padding: 12px 30px;
-            border: none;
-            background-color: white;
-            color: #ff6f91;
-            font-weight: bold;
-            border-radius: 30px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        .banner button:hover {
-            background-color: #ff6f91;
-            color: white;
-        }
-
-        /* Grid */
-        .grid {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            padding: 60px 20px;
-            flex-wrap: wrap;
-        }
-
-        .card {
-            background: white;
-            width: 250px;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-            text-align: center;
-            transition: 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-        }
-
-        .card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .card p {
-            padding: 15px;
-            font-weight: 500;
-            color: #ff6f91;
-        }
-
-        /* Footer */
-        footer {
-            background: #ffb6c1;
-            text-align: center;
-            padding: 20px;
-            color: white;
-            font-size: 14px;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .header {
-                flex-direction: column;
-                padding: 20px;
-            }
-
-            nav {
-                margin-top: 10px;
-            }
-
-            .banner h2 {
-                font-size: 28px;
-            }
-        }
-    </style>
 </head>
 
-<body>
+<body style="margin:0; padding:0; box-sizing:border-box; font-family:Poppins, sans-serif; background-color:#fff8f2; color:#333;">
 
-<header class="header">
-    <h1>Sweet Delights</h1>
+<!-- Header -->
+<header style="background:#ffb6c1; display:flex; justify-content:space-between; align-items:center; padding:20px 60px;">
+
+    <h1 style="color:white; font-size:28px;">Sweet Delights</h1>
+
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="products.html">Products</a>
-        <a href="contact.html">Contact</a>
+        <a href="index.html" style="text-decoration:none; color:white; margin-left:25px; font-weight:500;">Home</a>
+        <a href="about.html" style="text-decoration:none; color:white; margin-left:25px; font-weight:500;">About Us</a>
+        <a href="products.html" style="text-decoration:none; color:white; margin-left:25px; font-weight:500;">Products</a>
+        <a href="contact.html" style="text-decoration:none; color:white; margin-left:25px; font-weight:500;">Contact</a>
     </nav>
+
 </header>
 
-<section class="banner">
-    <h2>Freshly Baked Happiness</h2>
-    <p>Delicious cakes made with love</p>
-    <button>Shop Now</button>
+<!-- Banner -->
+<section style="background:linear-gradient(rgba(255,182,193,0.7), rgba(255,182,193,0.7)), url('https://sturbridgebakery.com/wp-content/uploads/2023/05/20220430-Raw-060-500x500.jpg') center/cover no-repeat; text-align:center; padding:120px 20px; color:white;">
+
+    <h2 style="font-size:42px; margin-bottom:15px;">Freshly Baked Happiness</h2>
+
+    <p style="font-size:18px; margin-bottom:20px;">Delicious cakes made with love</p>
+
+    <button style="padding:12px 30px; border:none; background-color:white; color:#ff6f91; font-weight:bold; border-radius:30px; cursor:pointer;">
+        Shop Now
+    </button>
+
 </section>
 
-<section class="grid">
-    <div class="card">
-        <img src="https://sturbridgebakery.com/wp-content/uploads/2023/05/20220430-Raw-060-500x500.jpg" alt="Chocolate Cake">
-        <p>Chocolate Cake – RM45</p>
+<!-- Product Grid -->
+<section style="display:flex; justify-content:center; gap:30px; padding:60px 20px; flex-wrap:wrap;">
+
+    <div style="background:white; width:250px; border-radius:15px; overflow:hidden; box-shadow:0 8px 20px rgba(0,0,0,0.1); text-align:center;">
+        <img src="https://sturbridgebakery.com/wp-content/uploads/2023/05/20220430-Raw-060-500x500.jpg" 
+             alt="Chocolate Cake" 
+             style="width:100%; height:200px; object-fit:cover;">
+        <p style="padding:15px; font-weight:500; color:#ff6f91;">Chocolate Cake – RM45</p>
     </div>
-    <div class="card">
-        <img src="https://www.justastasty.com/wp-content/uploads/2022/03/strawberry-custard-tart-featured.jpg" alt="Strawberry Tart">
-        <p>Strawberry Tart – RM30</p>
+
+    <div style="background:white; width:250px; border-radius:15px; overflow:hidden; box-shadow:0 8px 20px rgba(0,0,0,0.1); text-align:center;">
+        <img src="https://www.justastasty.com/wp-content/uploads/2022/03/strawberry-custard-tart-featured.jpg" 
+             alt="Strawberry Tart" 
+             style="width:100%; height:200px; object-fit:cover;">
+        <p style="padding:15px; font-weight:500; color:#ff6f91;">Strawberry Tart – RM30</p>
     </div>
-    <div class="card">
-        <img src="https://stylesweet.com/wp-content/uploads/2023/06/BlueberryCupcakes_feature.jpg" alt="Cupcakes">
-        <p>Cupcakes – RM20</p>
+
+    <div style="background:white; width:250px; border-radius:15px; overflow:hidden; box-shadow:0 8px 20px rgba(0,0,0,0.1); text-align:center;">
+        <img src="https://stylesweet.com/wp-content/uploads/2023/06/BlueberryCupcakes_feature.jpg" 
+             alt="Cupcakes" 
+             style="width:100%; height:200px; object-fit:cover;">
+        <p style="padding:15px; font-weight:500; color:#ff6f91;">Cupcakes – RM20</p>
     </div>
+
 </section>
 
-<footer>
+<!-- Footer -->
+<footer style="background:#ffb6c1; text-align:center; padding:20px; color:white; font-size:14px;">
     <p>Sweet Delights Bakery | Open 9am – 9pm</p>
 </footer>
 
